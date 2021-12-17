@@ -4,7 +4,7 @@
 - DB DataBase access layer
 - Service application services layer
 
-![database](domain.png)
+![database](Domain.png)
 
 - **Product** table: which are products which company produces (TV, Air conditioner, washing-machine, etc)
 
