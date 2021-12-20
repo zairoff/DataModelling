@@ -23,3 +23,19 @@
 - **Outcome** table: all outcomes to production lines
 
 - **StoreBalance** table: items balance (status, how many left in the store)
+
+## Monolithic => Microservices
+
+In order to developing application on microservices architecture let's separate bussiness to separate services.
+
+![microservice](microservice.png)
+
+**Supplier Service** - consist of all supplier related services & data. Not whole, but some part of will be dependent to Store and Import services. Which makes our application more flexible
+
+**Factory Service** - consist of all Factory related services & data. This service's some part of also will be dependent to Store and Export services.
+
+**Store Service** - all store informations, items, reports. All local services independet, such as reports, items status, analitics etc. Will be dependent to all services needed time.
+
+**Import Service** - all itmes import related data. Will be dependent to Store Service
+
+**Export Service** - all items related to export data. Will  be dependent to Store Service
